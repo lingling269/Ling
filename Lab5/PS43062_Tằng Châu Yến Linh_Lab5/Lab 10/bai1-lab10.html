@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab10-b1</bai1-lab10></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <div class="form-group">
+            <label for="hoten">Ho và tên</label><br>
+            <input class="form-control" type="text" id="hoten" tabindex="1">
+        </div>
+        <div class="form-group">
+            <label for="quoctich"> Quốc Tịch </label><br>
+            <input class="form-control" type="text" id="quoctich" value="Việt Nam" readonly>
+        </div>
+        <div class="form-group">
+            <label for="ghichu"> Ghi Chú </label><br>
+            <textarea class="form-control" id="ghichu" tabindex="2"></textarea>
+        </div>
+        <hr>
+        <div>
+            <button class="form-button" tabindex="3">Thêm</button>
+            <button class="form-button" tabindex="4">Sửa</button>
+            <button class="form-button" disabled>Xóa</button>
+        </div>
+    </form> <br><br><br><br><br>
+
+
+
+    <form action="">
+        <div class="form-group">
+            <label for="hoten">Họ và tên</label><br>
+            <input class="form-control" type="text" id="hoten" tabindex="1">
+        </div>
+
+        <fieldset class="form-group">
+       <legend>Giới Tính</legend>
+            <input type="radio" id="nam" name="option1" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="nu" name="option1" value="Nữ">
+            <label for="female">Nữ</label><br><br>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="ngaysinh">Ngày Sinh</label>
+            <input class="form-control" type="date">
+        </div>
+
+        <div class="form-group">
+            <label for="diem">Điểm</label>
+            <input class="form-control" type="number" min="0" max="10" step="0.25">
+        </div>
+
+        <div class="form-group">
+            <label for="job">Nghề nghiệp:</label>
+            <input class="form-control" list="jobs" id="job" name="job">
+            <datalist id="jobs">
+                <option value="Giáo viên">
+                <option value="Bác sĩ">
+                <option value="Kỹ sư">
+                <option value="Nhân viên văn phòng">
+                <option value="Công nhân">
+            </datalist><br><br>
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Sở Thích</legend>
+            <input type="checkbox" name="theothao" id="theothao">
+            <label for="theothao">Thể Thao</label>
+            <input type="checkbox" name="dulich" id="duclich">
+            <label for="theothao">Du Lịch</label>
+            <input type="checkbox" name="amnhac" id="amnhac">
+            <label for="theothao">Âm Nhạc</label>
+            <input type="checkbox" name="amthuc" id="amthuc">
+            <label for="theothao">Ẩm Thực</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="ghichu">Ghi Chú</label><br>
+            <textarea class="form-control" name="ghichu" id="ghichu"></textarea>
+        </div>
+
+        <div>
+            <button class="form-button">Đăng Ký</button>
+            <button class="form-button">Nhập Lại</button>
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

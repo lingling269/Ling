@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="fullname">Họ và tên:</label><br>
+            <input type="text" id="fullname" name="fullname">
+        </div>
+        <div class="form-group">
+            <label for="gender">Giới tính:</label><br>
+            <input type="radio" id="male" name="gender" value="Nam"> Nam
+            <input type="radio" id="female" name="gender" value="Nữ"> Nữ
+        </div>
+        <div class="form-group">
+            <label for="image">Hình ảnh:</label><br>
+            <input type="file" id="image" name="image">
+        </div>
+        <div class="form-group">
+            <label for="nationality">Quốc tịch:</label><br>
+            <select id="nationality" name="nationality">
+                <option value="Viet Nam">Việt Nam</option>
+                <option value="United States">United States</option>
+                <option value="Japan">Japan</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Sở thích:</label><br>
+            <input type="checkbox" id="sport" name="hobbies" value="Thể thao"> Thể thao
+            <input type="checkbox" id="travel" name="hobbies" value="Du lịch"> Du lịch
+            <input type="checkbox" id="music" name="hobbies" value="Âm nhạc"> Âm nhạc
+            <input type="checkbox" id="food" name="hobbies" value="Ẩm thực"> Ẩm thực
+        </div>
+        <div class="form-group">
+            <label for="notes">Ghi chú:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        </div>
+        <hr>
+        <button type="submit">Đăng ký</button>
+        <button type="reset">Nhập lại</button>
+    </form>
+</body>
+
+</html>
